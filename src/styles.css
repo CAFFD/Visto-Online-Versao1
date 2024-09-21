@@ -1,1 +1,138 @@
-/* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Rammetto+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&display=swap');
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol, ul {
+  list-style: none;
+}
+blockquote, q {
+  quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/* Reset CSS */
+
+:root{
+  --bs-color-verdeEsc: #1B4332;
+  --bs-color-verdeCla: #9CCE9F;
+  --bs-color-brancoZi: #E6E6E6;
+}
+/* Variáveis */
+
+html {
+  height: 100%;
+}
+
+body {
+  display:flex;
+  align-items:center;
+  justify-content:center;
+}
+
+.login-page{
+  width: 400px;
+  padding: 8% 0 0;
+  margin: auto;
+}
+
+.card {
+  position: relative;
+  z-index: 1;
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 400px;
+  padding: 40px;
+  transform: translate(-50%, -50%);
+  background: var(--bs-color-verdeEsc);
+  box-sizing: border-box;
+  box-shadow: 0 15px 25px rgb(27, 67, 50);
+  border-radius: 10px;
+}
+
+.card-text {
+  margin-bottom: 15px;
+}
+
+.title-text {
+  color: var(--bs-color-brancoZi);
+  font-family: "Rammetto One", sans-serif;
+  font-size: 40px;
+}
+
+.sub-title-text {
+  margin-top: 5px;
+  margin-bottom: 10px;
+  color: var(--bs-color-verdeCla);
+  font-family: "Fredoka", sans-serif;
+  font-size: 20px;
+}
+
+.card-input {
+  width: 100%;
+  padding: 10px 0;
+  font-size: 13px;
+  color: #fff;
+  margin-bottom: 30px;
+  border: none;
+  border-bottom: 1px solid #fff;
+  outline: none;
+  background: transparent;
+}
+.card-button{
+  position: relative;
+  display: inline-block;
+  padding: 10px 20px;
+  color: var(--bs-color-brancoZi);
+  font-size: 20px;
+  text-decoration: none;
+  overflow: hidden;
+  transition: .5s;
+  margin-top: 15px;
+  letter-spacing: 2px;
+  font-family: "Fredoka", sans-serif;
+}
+
+.card-button:hover {
+  background: var(--bs-color-verdeCla);
+  color: var(--bs-color-verdeEsc);
+  border-radius: 5px;
+  box-shadow: 0 0 5px var(--bs-color-verdeCla),
+  0 0 25px var(--bs-color-verdeCla),
+  0 0 50px var(--bs-color-verdeCla),
+  0 0 100px var(--bs-color-verdeEsc);
+}
